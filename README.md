@@ -4,6 +4,7 @@
 🔔 **11/6** 시작
 
 🔔 **11/9** 레퍼지토리 이동
+- https://github.com/ddooyn/kakaho-corp-clone-2021
 
 🔔 **11/13** 카드 섹션을 기존 flex에서 grid로 재구현 (+반응형)
 - flex (https://ddooyn.github.io/front-end-school/study/kakaho-corp-clone/flex.html)
