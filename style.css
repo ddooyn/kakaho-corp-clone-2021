@@ -25,30 +25,45 @@ body {
 }
 
 .menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 10;
+}
+
+.menu-bar > div {
   display: flex;
+  max-width: 1280px;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  height: 72px;
 }
 
 main {
   margin: 0 auto;
+  padding-top: 172px;
   box-sizing: border-box;
   max-width: 1280px;
 }
 
 .sr-only {
   position: absolute;
-  left: -9999px;
-  /* text-indent: -9999px; */
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
 }
 
 /* 상단 메뉴바 */
 .menu-bar {
   height: 72px;
+  border-bottom: 1px solid #eee;
 }
 
 .menu-bar__title {
@@ -251,8 +266,10 @@ h3 {
 
 .main-item {
   position: sticky;
-  top: 0px;
+  top: 109px;
   height: 700px;
+  width: 620px;
+  box-sizing: border-box;
 }
 
 .main-item strong {
@@ -394,6 +411,7 @@ h3 {
 
 .container--second {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .card-wrap {
@@ -406,6 +424,7 @@ h3 {
 
 .container--second .main {
   flex: 1;
+  padding-left: 26px;
 }
 
 .card__tit--cus {
@@ -447,8 +466,93 @@ h3 {
   background-color: #f4f4f4;
 }
 
+.container--third {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7px;
+}
+.container--third div {
+  width: 620px;
+}
+.item-etc {
+  display: inline-block;
+  height: 360px;
+  width: 100%;
+  padding: 36px 36px 0;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.item-etc.card1 {
+  background-color: #fae100;
+}
+.item-etc.card2 {
+  background-color: #3c64ff;
+}
+
+.item-etc strong {
+  display: block;
+  margin-top: 20px;
+  max-height: 92px;
+  height: 92px;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: -1px;
+}
+
+.item-etc .etc-shortcut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  width: 175px;
+  height: 40px;
+  vertical-align: center;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.etc-shortcut i {
+  display: inline-block;
+  margin: 0 -2px 0 3px;
+  font-size: 25px;
+}
+.icon-rotate {
+  transform: rotate(-45deg);
+}
+
+.more-news {
+  display: block;
+  width: 260px;
+  height: 60px;
+  margin: 84px auto 0;
+  border-radius: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  color: #000;
+  background-color: #eee;
+  text-align: center;
+}
+
+.link-top {
+  display: block;
+  box-sizing: border-box;
+  float: right;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
 /* footer */
-footer {
+.footer {
+  margin-top: 182px;
+  border-top: 1px solid #ebebeb;
   height: 500px;
 }
 
@@ -458,6 +562,7 @@ footer {
     box-sizing: border-box;
     max-width: 950px;
   }
+
   .container .main {
     grid-row: span 8;
   }
@@ -509,5 +614,14 @@ footer {
 
   .card-big br {
     display: block;
+  }
+  .card-wrap {
+    order: 2;
+  }
+  .container—second .main {
+    order: 1;
+  }
+  .container—second {
+    flex-direction: column;
   }
 }
