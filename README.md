@@ -9,7 +9,7 @@
 - flex (https://ddooyn.github.io/front-end-school/study/kakaho-corp-clone/flex.html)
 - gird (https://ddooyn.github.io/front-end-school/study/kakaho-corp-clone/grid.html)
 
-🔔 **11/16** 페어 프로그래밍 시작 (with Jetty2020)
+🔔 **11/16** 페어 프로그래밍 시작 (with @Jetty2020)
 - https://github.com/Jetty2020/kakaho-clone
 
 🔔 **11/17** Merging Grid branch into Main
