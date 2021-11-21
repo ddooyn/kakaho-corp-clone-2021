@@ -13,3 +13,5 @@
 - https://github.com/Jetty2020/kakaho-clone
 
 🔔 **11/17** Merging Grid branch into Main
+
+🔔 **11/21** 페어 프로그래밍 종료
